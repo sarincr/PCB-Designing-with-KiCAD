@@ -1,0 +1,227 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer:LM555xN U1
+U 1 1 6131B312
+P 5850 3750
+F 0 "U1" H 5850 4331 50  0000 C CNN
+F 1 "LM555xN" H 5850 4240 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6500 3350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 6700 3350 50  0001 C CNN
+	1    5850 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6131CE53
+P 6600 3250
+F 0 "R1" H 6670 3296 50  0000 L CNN
+F 1 "4k" H 6670 3205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 6530 3250 50  0001 C CNN
+F 3 "~" H 6600 3250 50  0001 C CNN
+	1    6600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6131D34A
+P 6850 3700
+F 0 "R2" H 6920 3746 50  0000 L CNN
+F 1 "1k" H 6920 3655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 6780 3700 50  0001 C CNN
+F 3 "~" H 6850 3700 50  0001 C CNN
+	1    6850 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 6131DD81
+P 6850 4400
+F 0 "D1" H 6843 4617 50  0000 C CNN
+F 1 "LED" H 6843 4526 50  0000 C CNN
+F 2 "LED_THT:LED_BL-FL7680RGB" H 6850 4400 50  0001 C CNN
+F 3 "~" H 6850 4400 50  0001 C CNN
+	1    6850 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 6131E373
+P 7050 4400
+F 0 "D2" V 7089 4282 50  0000 R CNN
+F 1 "LED" V 6998 4282 50  0000 R CNN
+F 2 "LED_THT:LED_BL-FL7680RGB" H 7050 4400 50  0001 C CNN
+F 3 "~" H 7050 4400 50  0001 C CNN
+	1    7050 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 61322102
+P 4650 4350
+F 0 "C1" H 4765 4396 50  0000 L CNN
+F 1 "C" H 4765 4305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal" H 4688 4200 50  0001 C CNN
+F 3 "~" H 4650 4350 50  0001 C CNN
+	1    4650 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 61322A7E
+P 5100 4350
+F 0 "C2" H 5215 4396 50  0000 L CNN
+F 1 "C" H 5215 4305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal" H 5138 4200 50  0001 C CNN
+F 3 "~" H 5100 4350 50  0001 C CNN
+	1    5100 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3550 6850 3550
+Wire Wire Line
+	7050 4250 7050 4200
+Wire Wire Line
+	7050 4200 6850 4200
+Connection ~ 6850 4200
+Wire Wire Line
+	6850 4200 6850 4250
+Wire Wire Line
+	6850 4550 6850 4650
+Wire Wire Line
+	7050 4550 7050 4650
+Wire Wire Line
+	7050 4650 6850 4650
+Connection ~ 6850 4650
+Wire Wire Line
+	6850 4650 6850 4750
+Wire Wire Line
+	5350 3750 5100 3750
+Wire Wire Line
+	5100 3750 5100 4200
+Wire Wire Line
+	6600 3400 6600 3750
+Wire Wire Line
+	6600 3750 6350 3750
+Wire Wire Line
+	6600 3100 6600 2950
+Wire Wire Line
+	6600 2950 5850 2950
+Wire Wire Line
+	5850 2950 5850 3350
+$Comp
+L Device:R R3
+U 1 1 6131D77D
+P 7350 3600
+F 0 "R3" H 7420 3646 50  0000 L CNN
+F 1 "10k" H 7420 3555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 7280 3600 50  0001 C CNN
+F 3 "~" H 7350 3600 50  0001 C CNN
+	1    7350 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3850 6850 4200
+Wire Wire Line
+	6350 3950 7100 3950
+Wire Wire Line
+	7350 3950 7350 3750
+Wire Wire Line
+	7350 3450 7350 3400
+Wire Wire Line
+	7350 3400 6600 3400
+Connection ~ 6600 3400
+Wire Wire Line
+	5100 4500 5100 4600
+Wire Wire Line
+	5350 3550 5350 2700
+Wire Wire Line
+	5350 2700 7100 2700
+Wire Wire Line
+	7100 2700 7100 3950
+Connection ~ 7100 3950
+Wire Wire Line
+	7100 3950 7350 3950
+Wire Wire Line
+	4650 4200 4650 3550
+Wire Wire Line
+	4650 3550 5350 3550
+Connection ~ 5350 3550
+Wire Wire Line
+	5350 3550 5450 3550
+Wire Wire Line
+	4650 4500 4650 4600
+Wire Wire Line
+	5350 3950 4750 3950
+Connection ~ 5850 2950
+Wire Wire Line
+	4750 3950 4750 2950
+Wire Wire Line
+	4750 2950 5850 2950
+$Comp
+L Device:Battery BT1
+U 1 1 6137981D
+P 4000 3800
+F 0 "BT1" H 4108 3846 50  0000 L CNN
+F 1 "Battery" H 4108 3755 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Bulgin_BX0036_1xC" V 4000 3860 50  0001 C CNN
+F 3 "~" V 4000 3860 50  0001 C CNN
+	1    4000 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3600 4000 2950
+Wire Wire Line
+	4000 2950 4750 2950
+Connection ~ 4750 2950
+Wire Wire Line
+	4000 4000 4000 4650
+Connection ~ 5100 4600
+Wire Wire Line
+	4650 4600 5100 4600
+Wire Wire Line
+	4000 4650 5100 4650
+Wire Wire Line
+	5100 4600 5100 4650
+Wire Wire Line
+	5850 4150 5850 4300
+$Comp
+L power:GND #GN01
+U 1 1 6136839B
+P 5850 4450
+F 0 "#GN01" H 5938 4459 50  0000 L CNN
+F 1 "GND" H 5938 4368 50  0000 L CNN
+F 2 "" H 5850 4450 50  0001 C CNN
+F 3 "" H 5850 4450 50  0001 C CNN
+	1    5850 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 4750 6350 4750
+Wire Wire Line
+	6350 4750 6350 4300
+Wire Wire Line
+	6350 4300 5850 4300
+Connection ~ 5850 4300
+Wire Wire Line
+	5850 4300 5850 4450
+Wire Wire Line
+	5100 4600 5650 4600
+Wire Wire Line
+	5650 4600 5650 4300
+Wire Wire Line
+	5650 4300 5850 4300
+$EndSCHEMATC
